@@ -1,0 +1,23 @@
+"""
+1.Crear una funcion que pase de entero >0 y <4000 a romano
+2.Cualquier otra entrada debe dar error
+
+Casos de prueba
+a)1194-->MCMXCIV
+b)4000->RomanNumberError("El valor debe ser menor de 4000")
+c)"unacadena"->RomanNumberError("Debe ser un entero")
+d)0->RomanNumberError("El valor debe ser mayor a cero")
+e)-3->RomanNumberError("El valor debe ser mayor a cero")
+f)4.5->RomanNumberError("Debe ser un entero")
+"""
+
+class RomanNumberError(Exception):    #aquí vamos a capturar todos los errores (raiseValueError("debes meter un entero"))
+    pass
+
+
+numero_romano=[
+    (1000,"M"),(500,"D"),(100,"C"),(50,"D"),(10,"X"),(5,"V"),(1,"I")
+]
+
+def entero_a_romano(numero):
+    return "MCMXCIV"
